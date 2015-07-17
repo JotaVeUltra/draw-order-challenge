@@ -5,11 +5,9 @@ This challenge should be pretty straight forward for those familiar with pygame.
 
 **Challenge:**  
 When creating a topdown rpg it is important that sprites are drawn in the correct order.  We want to avoid sprites overlapping like this:  
-http://i.imgur.com/woOsQFA.png  
+<img src="http://i.imgur.com/woOsQFA.png" />  
 And instead make sure they look like this:  
-http://i.imgur.com/nUeFu4G.png
-
-
+<img src="http://i.imgur.com/nUeFu4G.png" />  
 When all the sprites can move independently, this means that the draw order is always changing.  The goal of this challenge is to make sure that sprites are always drawn in the correct order.
 
 
@@ -22,5 +20,3 @@ In order to solve this challenge, you only need to edit the `main.py` file, thou
 I suggest investigating different types of sprite groups:  
 http://www.pygame.org/docs/ref/sprite.html  
 The base problem can be solved by adding/editing about three lines of code if you know what you are aiming at.  If you want to go the extra mile, make your implementation use dirty sprites.  This will require changing the class from which `actors.RPGSprite` inherits, as well as possibly some other minor parts of the code in that file.
-
-
