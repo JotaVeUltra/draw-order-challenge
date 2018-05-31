@@ -53,6 +53,7 @@ class App(object):
     def render(self):
         """Fill screen and render all actors."""
         self.screen.fill(prepare.BACKGROUND_COLOR)
+        self.all_sprites.spritedict = dict(sorted(self.all_sprites.spritedict.items(), key=lambda x: x[0].rect.bottom))
         self.all_sprites.draw(self.screen)
         pg.display.update()
 
